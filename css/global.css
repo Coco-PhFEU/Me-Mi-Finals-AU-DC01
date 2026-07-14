@@ -1,0 +1,248 @@
+
+/*selects all elements in the webpages*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8ef;
+    color: #3d2518;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*Header*/
+
+.site_header {
+    width: 100%;
+    padding: 20px 20px 0;
+    position: relative;
+}
+
+.header_top {
+    height: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 40px 40px 0 0;
+    background: linear-gradient(180deg, #f4a64d, #e88a2d);
+    box-shadow: 0 12px 30px rgba(90,46,31,.12);
+}
+
+/*Navigation*/
+
+.site_nav {
+    max-width: 1200px;
+    margin: -70px auto 0;
+    padding: 18px 28px;
+    background: rgba(255,248,239,.95);
+    border-radius: 28px 28px 0 0;
+    box-shadow: 0 12px 30px rgba(90,46,31,.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    z-index: 2;
+}
+
+.site_nav::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transform: translateY(-14px);
+    height: 110px;
+    background: url("./Images/Lettuce_Nav.png") center top / 100% 100% no-repeat;
+    filter: drop-shadow(0 6px 6px rgba(90,46,31,.15));
+    z-index: 0;
+    pointer-events: none;
+}
+
+.brand,
+.nav_list{
+    position: relative;
+    z-index: 1;
+}
+
+/*Keep navbar contents above the lettuce*/
+
+.brand,
+.nav_list{
+    position:relative;
+    z-index:1;
+}
+
+/*Brand*/
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.brand_logo{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.brand_name{
+    font-size:2rem;
+    font-weight:800;
+    color:#5a2e1f;
+}
+
+/*Navigation Links*/
+
+.nav_list{
+    list-style:none;
+    display:flex;
+    gap:30px;
+    margin:0;
+    padding:0;
+}
+
+.nav_link{
+    text-decoration:none;
+    color:#3d2518;
+    font-weight:700;
+    transition:.25s;
+}
+
+.nav_link:hover{
+    color:#ff8a1f;
+}
+
+/*Main*/
+
+.main_content{
+    max-width:1200px;
+    margin:70px auto 0;
+    padding:20px;
+}
+
+.main_section{
+    background:#fff3e2;
+    border-radius:28px;
+    padding:50px;
+    min-height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    box-shadow:0 12px 30px rgba(90,46,31,.12);
+}
+
+.main_text{
+    max-width:650px;
+    flex:1 1 55%;
+}
+
+.main_image{
+    flex:1 1 40%;
+}
+
+.main_image img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
+
+.main_title{
+    font-size:3rem;
+    color:#5a2e1f;
+    margin-bottom:18px;
+}
+
+.main_subtitle{
+    color:#7a5a46;
+    font-size:1.1rem;
+    margin-bottom:28px;
+}
+
+.main_actions{
+    display:flex;
+    gap:15px;
+}
+
+.button_primary,
+.button_secondary{
+    padding:14px 28px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.button_primary{
+    background:#ff8a1f;
+    color:white;
+}
+
+.button_secondary{
+    background:#fff1dd;
+    color:#5a2e1f;
+}
+
+/*Footer*/
+
+.site_footer{
+    max-width:1200px;
+    margin:40px auto;
+    padding:30px;
+    background:#fff3e2;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(90,46,31,.12);
+}
+
+.footer_title{
+    color:#5a2e1f;
+}
+
+.footer_text{
+    color:#7a5a46;
+}
+
+/*Responsive*/
+
+@media(max-width:900px){
+
+    .site_nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav_list{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .main_section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .main_text{
+        max-width:100%;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .brand_name{
+        font-size:1.5rem;
+    }
+
+    .main_title{
+        font-size:2.2rem;
+    }
+
+    .nav_list{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}

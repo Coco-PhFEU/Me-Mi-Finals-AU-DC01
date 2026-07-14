@@ -1,0 +1,17 @@
+/*Adjusted the style for the About Us info*/
+#main_section{
+    background-image:url(../Images/Darken\ about\ bg.png);
+    background-position:0% 30%;
+}
+
+#main_title{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(215, 190, 142);
+}
+
+#main_subtitle{
+    color: rgba(244, 232, 210, 0.944);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+
+}

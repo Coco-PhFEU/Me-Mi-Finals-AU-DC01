@@ -1,0 +1,164 @@
+/*Category header*/
+
+.category-header{
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.category-header h2{
+    font-size:2.5rem;
+    color:#5a2e1f;
+    margin-bottom:8px;
+}
+
+.category-header p{
+    color:#7b6454;
+    font-size:1rem;
+}
+
+/*making the menu a grid*/
+
+.menu-section{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/*Styling for Card*/
+
+.food-card{
+    background:#fffaf3;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 12px 30px rgba(90,46,31,.12);
+    display:flex;
+    flex-direction:column;
+    transition:.25s;
+
+}
+
+.food-card:hover{
+    transform:translateY(-6px);
+}
+
+/*Styling of food image*/
+
+.food-image{
+    width:100%;
+    margin-bottom:18px;
+}
+
+.food-image img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+}
+
+/*Text styling*/
+
+.food-name{
+    font-size:1.8rem;
+    color:#5a2e1f;
+    margin-bottom:10px;
+}
+
+.food-price{
+    color:#ff8a1f;
+    font-size:1.8rem;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.food-description{
+    color:#6b584c;
+    line-height:1.6;
+    margin-bottom:25px;
+    flex-grow:1;
+}
+
+/*Qty section for text and */
+
+.quantity-section{
+    margin-bottom:20px;
+}
+
+.quantity-controls{
+    display:flex;
+    width:170px;
+    border:2px solid #f2d7b2;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.quantity-controls button{
+    width:50px;
+    border:none;
+    background:white;
+    font-size:1.6rem;
+    cursor:pointer;
+}
+
+.quantity{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+/*Styles the summary of order*/
+
+.order-summary{
+    border-top:2px solid #f2d7b2;
+    padding-top:15px;
+    margin-top:10px;
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+.summary-row span:last-child{
+    color:#ff8a1f;
+    font-weight:bold;
+}
+
+/*Styles the button for adding to cart*/
+
+.add-cart-btn{
+    margin-top:15px;
+    width:100%;
+    border:none;
+    border-radius:40px;
+    padding:15px;
+    background:#ff8a1f;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.add-cart-btn:hover{
+    background:#eb7d14;
+}
+
+/*responsiveness of screen*/
+
+@media(max-width:1000px){
+    .menu-section{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px){
+    .menu-section{
+        grid-template-columns:1fr;
+    }
+}
