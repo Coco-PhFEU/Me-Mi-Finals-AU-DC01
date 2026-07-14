@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me & Mi order page</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body class="page_home">
+
+    <!--Main Header of the webpage where you can see the Nav-->
+    <header id="site_header" class="site_header">
+        <div class="header_top">
+        </div>
+
+        <nav id="site_nav" class="site_nav">
+            <div class="brand">
+               <a href="./index.html">
+                    <img src="../Images/Logo.png"  alt="Me and Mi logo" class="brand_logo" >
+                </a>
+                <h1 class="brand_name">Me & Mi</h1>
+            </div>
+
+            <ul class="nav_list">
+                <li class="nav_item"><a class="nav_link" href="./index.html">Home</a></li>
+                <li class="nav_item"><a class="nav_link" href="./menu.html">Menu</a></li>
+                <li class="nav_item"><a class="nav_link" href="./order.html">Order</a></li>
+                <li class="nav_item"><a class="nav_link" href="./about us.html">About Us</a></li>
+                <li class="nav_item nav_cart">
+                    <a href="./order.html">
+                    <img src="../Images/Cart.png" alt="Shopping Cart" width="30px">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="order-page">
+        <section class="order-header">
+            <h1>Your Order</h1>
+            <p>Review your selected items before checking out.</p>
+        </section>
+
+    <!-- js will insert all ordered items here -->
+    <section id="order-items" class="order-items">
+        <!--Space for Html-->
+    </section>
+
+    <!-- Order Summary -->
+    <div class="checkout-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-line">
+            <span>Total Items</span>
+            <span id="total-items">0</span>
+        </div>
+        <div class="summary-line">
+            <span>Grand Total</span>
+            <span id="grand-total">₱0.00</span>
+        </div>
+        <button id="checkout-btn" class="checkout-btn">
+            Proceed to Checkout
+        </button>
+    </div>
+</main>
+
+
+    <!--Footer-->
+    <footer id="site_footer" class="site_footer">
+        <h4 class="footer_title">Contact Us</h4>
+        <p class="footer_text">Mobile Number: 0904-226-4464</p>
+        <p class="footer_text">Gmail Address: MeMi@bahnmi.ph</p>
+        <p class="footer_text">Feedback Concerns: MeMiFeedbackSupport@bahnmi.ph</p>
+    </footer>
+    
+    <script src="../java_script/order.js"></script>
+</body>
+</html>
