@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me & Mi home page</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body class="page_home">
+
+    <!--Main Header of the Home page where you can see the Nav-->
+    <header id="site_header" class="site_header">
+        <div class="header_top">
+        </div>
+        <nav id="site_nav" class="site_nav">
+            <div class="brand">
+                <a href="./index.html">
+                    <img src="../Images/Logo.png"  alt="Me and Mi logo" class="brand_logo" >
+                </a>
+                <h1 class="brand_name">Me & Mi</h1>
+            </div>
+
+            <ul class="nav_list">
+                
+                <li class="nav_item"><a class="nav_link" href="index.html">Home</a></li>
+                <li class="nav_item"><a class="nav_link" href="./menu.html">Menu</a></li>
+                <li class="nav_item"><a class="nav_link" href="./order.html">Order</a></li>
+                <li class="nav_item"><a class="nav_link" href="./about us.html">About Us</a></li>
+                <li class="nav_item nav_cart">
+                    <a href="./order.html">
+                    <img src="../Images/Cart.png" alt="Shopping Cart" width="30px">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Slider images|| Manual & Automatic-->
+
+     <main id="main_content" class="main_content">
+        <section id="image_slider" class="image_slider">
+            <div class="slider_track">
+                <div class="slide active">
+                    <img src="../Images/Bahn Mi slider 1.png" alt="Featured dish 1">
+                </div>
+                <div class="slide">
+                    <img src="../Images/Bahn mi slider 2.png" alt="Featured dish 2">
+                </div>
+                <div class="slide">
+                    <img src="../Images/Bahn mi slider 3.png" alt="Featured dish 3">
+                </div>
+            </div>
+            <div class="slider_overlay"></div>
+                <button class="slider_arrow slider_prev" aria-label="Previous slide">&#10094;</button>
+                <button class="slider_arrow slider_next" aria-label="Next slide">&#10095;</button>
+            <div class="slider_dots">
+                <!--Dots have data attributes to show the index of the img-->
+                <button class="slider_dot active" data-index="0" aria-label="Go to slide 1"></button>
+                <button class="slider_dot" data-index="1" aria-label="Go to slide 2"></button>
+                <button class="slider_dot" data-index="2" aria-label="Go to slide 3"></button>
+            </div>
+        </section>
+
+
+        <!--Main content of the home-->
+        <section id="main_section" class="main_section">
+            <div class="main_text">
+                <h2 class="main_title">
+                    Craving for a bite of a delicious meal? Me & Mi will take care of it!
+                </h2>
+                <p class="main_subtitle">
+                    Fresh, tasty, and delivered with care.
+                </p>
+                <div class="main_actions">
+                    <a href="./order.html" class="button_primary">Order Now</a>
+                    <a href="./menu.html" class="button_secondary">View Menu</a>
+                </div>
+            </div>
+                <div class="main_image">
+                    <img src="../Images/Obama_eating.png" alt="Obama eating" class="main_content_pic">
+                </div>
+        </section>
+    </main>
+
+
+    <!--Footer-->
+    <footer id="site_footer" class="site_footer">
+        <h4 class="footer_title">Contact Us</h4>
+        <p class="footer_text">Mobile Number: 0904-226-4464</p>
+        <p class="footer_text">Gmail Address: Me&Mi@bahnmi.ph</p>
+        <p class="footer_text">Feedback Concerns: Me&MiFeedbackSupport@bahnmi.ph</p>
+    </footer>
+
+    <script src="../java_script/home.js"></script>
+</body>
+</html>
